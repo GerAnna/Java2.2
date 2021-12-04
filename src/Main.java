@@ -1,21 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        int InitialBalance;
-        InitialBalance = 5000;
+        int initialbalance;
+        initialbalance = 50;
         int refill;
-        refill = 2550;
-        int bonus;
-        int totalBill;
+        refill = 50;
+        int bonus = 0;
+        int totalbill;
+        totalbill = initialbalance + bonus + refill;
        if (refill > 1000) {
         bonus = refill / 10;
-           totalBill = InitialBalance + bonus + refill;
            System.out.println(bonus + " - Ваш бонус!");
-           System.out.println(totalBill + " - Ваш баланс после пополнения счёта.");
+           System.out.println(totalbill + " - Ваш баланс после пополнения счёта.");
        } else {
            bonus = 0;
-           totalBill = InitialBalance + refill;
            System.out.println("Вы пополнили счет на " +refill+ " рублей.");
-           System.out.println(totalBill + " - Ваш баланс после пополнения счёта");
+           System.out.println(totalbill + " - Ваш баланс после пополнения счёта");
 
        }
     }
